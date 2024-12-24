@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./icon/cay\ thong.avif);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #fff;
+  font-size: xx-large;
+  margin: 0;
+  font-family: "Poppins", serif;
+}
+
+.snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url(./icon/tuyet1.png);
+  background-size: cover;
+  animation: animationSnow 4s ease-in-out infinite;
+}
+
+@keyframes animationSnow {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100px, 50vh);
+    opacity: 0;
+  }
+}
